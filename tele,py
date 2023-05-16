@@ -1,0 +1,32 @@
+def mostrar_menu():
+    print("Bienvenido a la Tienda de Teléfonos")
+    print("1. Samsung")
+    print("2. Apple")
+    print("3. Xiaomi")
+    print("4. Motorola")
+    
+def elegir_opcion():
+    opcion = input("Elige una marca de teléfono (1-4): ")
+    return opcion
+
+def mostrar_informacion(opcion):
+    if opcion == "1":
+        print("Has elegido Samsung.") 
+    elif opcion == "2":
+        print("Has elegido Apple.")
+    elif opcion == "3":
+        print("Has elegido Xiaomi.")
+    elif opcion == "4":
+        print("Has elegido Motorola.")
+    else:
+        print("Opción inválida. Por favor, elige una opción válida.")
+
+def ejecutar_tienda():
+    while True:
+        mostrar_menu()
+        opcion = elegir_opcion()
+        mostrar_informacion(opcion)
+        if opcion == "5":
+            break
+
+ejecutar_tienda()
